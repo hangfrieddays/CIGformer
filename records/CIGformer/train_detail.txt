@@ -1,0 +1,1872 @@
+[2024-05-25 16:06:20,432]-[trainer.py line:86]:using random init model! 
+[2024-05-25 16:06:20,862]-[trainer.py line:222]:===> Loading model 
+[2024-05-25 16:06:20,878]-[trainer.py line:114]:Network: CIGformer, with parameters: 1,290,704 
+[2024-05-25 16:06:20,878]-[trainer.py line:115]:CIGformer(
+  (SubstituteModule): SubstituteModule(
+    (combined_module): Sequential(
+      (0): Conv2d(5, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    )
+  )
+  (FusionModule): FusionModule(
+    (fusion_model): Sequential(
+      (0): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): LeakyReLU(negative_slope=0.2, inplace=True)
+      (2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (3): LeakyReLU(negative_slope=0.2, inplace=True)
+      (4): Conv2d(32, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (5): Tanh()
+    )
+  )
+  (PCG_layers): ModuleDict(
+    (layer_0): ModuleDict(
+      (encoder): Encoder(
+        (inter_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (ms_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (decoder): Decoder(
+        (SSModule): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=48, bias=False)
+                          (to_out): Linear(in_features=16, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (guide_module): IntermediateGuidanceModule(
+        (conv): Conv2d(32, 16, kernel_size=(1, 1), stride=(1, 1))
+        (ms_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=16, out_features=16, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=16, out_features=32, bias=False)
+                        (to_q): Linear(in_features=16, out_features=16, bias=False)
+                        (to_out): Linear(in_features=16, out_features=16, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=16, out_features=64, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=64, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=16, out_features=32, bias=False)
+                        (to_q): Linear(in_features=16, out_features=16, bias=False)
+                        (to_out): Linear(in_features=16, out_features=16, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=16, out_features=64, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=64, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=16, out_features=16, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=16, out_features=32, bias=False)
+                        (to_q): Linear(in_features=16, out_features=16, bias=False)
+                        (to_out): Linear(in_features=16, out_features=16, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=16, out_features=64, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=64, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=16, out_features=32, bias=False)
+                        (to_q): Linear(in_features=16, out_features=16, bias=False)
+                        (to_out): Linear(in_features=16, out_features=16, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=16, out_features=64, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=64, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+    (layer_1): ModuleDict(
+      (encoder): Encoder(
+        (inter_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=64, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=64, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (ms_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=64, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (decoder): Decoder(
+        (SSModule): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=16, out_features=16, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=16, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=16, out_features=96, bias=False)
+                          (to_out): Linear(in_features=32, out_features=16, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((16,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=16, out_features=64, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=64, out_features=16, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (guide_module): IntermediateGuidanceModule(
+        (conv): Conv2d(64, 32, kernel_size=(1, 1), stride=(1, 1))
+        (ms_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=32, out_features=32, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=32, out_features=64, bias=False)
+                        (to_q): Linear(in_features=32, out_features=32, bias=False)
+                        (to_out): Linear(in_features=32, out_features=32, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=32, out_features=128, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=128, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=32, out_features=64, bias=False)
+                        (to_q): Linear(in_features=32, out_features=32, bias=False)
+                        (to_out): Linear(in_features=32, out_features=32, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=32, out_features=128, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=128, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=32, out_features=32, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=32, out_features=64, bias=False)
+                        (to_q): Linear(in_features=32, out_features=32, bias=False)
+                        (to_out): Linear(in_features=32, out_features=32, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=32, out_features=128, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=128, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=32, out_features=64, bias=False)
+                        (to_q): Linear(in_features=32, out_features=32, bias=False)
+                        (to_out): Linear(in_features=32, out_features=32, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=32, out_features=128, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=128, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+    (layer_2): ModuleDict(
+      (encoder): Encoder(
+        (inter_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=128, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=64, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=128, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=64, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (ms_encoder): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=2, dilation=1, padding=0, stride=2)
+                (linear): Linear(in_features=128, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=64, out_features=64, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=64, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=64, out_features=256, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=256, out_features=64, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (decoder): Decoder(
+        (SSModule): SSModule(
+          (module): Sequential(
+            (0): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+            (1): SwinModule(
+              (patch_partition): PatchMerging(
+                (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+                (linear): Linear(in_features=32, out_features=32, bias=True)
+              )
+              (layers): ModuleList(
+                (0): ModuleList(
+                  (0): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (to_qkv): Linear(in_features=32, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                  (1): SwinBlock(
+                    (attention_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): WindowAttention(
+                          (cyclic_shift): CyclicShift()
+                          (cyclic_back_shift): CyclicShift()
+                          (to_qkv): Linear(in_features=32, out_features=192, bias=False)
+                          (to_out): Linear(in_features=64, out_features=32, bias=True)
+                        )
+                      )
+                    )
+                    (mlp_block): Residual(
+                      (fn): PreNorm(
+                        (norm): LayerNorm((32,), eps=1e-05, elementwise_affine=True)
+                        (fn): FeedForward(
+                          (net): Sequential(
+                            (0): Linear(in_features=32, out_features=128, bias=True)
+                            (1): GELU(approximate='none')
+                            (2): Linear(in_features=128, out_features=32, bias=True)
+                          )
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+      (guide_module): IntermediateGuidanceModule(
+        (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+        (ms_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=64, out_features=64, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=64, out_features=128, bias=False)
+                        (to_q): Linear(in_features=64, out_features=64, bias=False)
+                        (to_out): Linear(in_features=64, out_features=64, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=64, out_features=256, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=256, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=64, out_features=128, bias=False)
+                        (to_q): Linear(in_features=64, out_features=64, bias=False)
+                        (to_out): Linear(in_features=64, out_features=64, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=64, out_features=256, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=256, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+        (pan_guidance_module): ModuleList(
+          (0): SwinModule(
+            (patch_partition): PatchMerging(
+              (patch_merge): Unfold(kernel_size=1, dilation=1, padding=0, stride=1)
+              (linear): Linear(in_features=64, out_features=64, bias=True)
+            )
+            (layers): ModuleList(
+              (0): ModuleList(
+                (0): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (to_kv): Linear(in_features=64, out_features=128, bias=False)
+                        (to_q): Linear(in_features=64, out_features=64, bias=False)
+                        (to_out): Linear(in_features=64, out_features=64, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=64, out_features=256, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=256, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+                (1): SwinBlock(
+                  (attention_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): WindowAttention(
+                        (cyclic_shift): CyclicShift()
+                        (cyclic_back_shift): CyclicShift()
+                        (to_kv): Linear(in_features=64, out_features=128, bias=False)
+                        (to_q): Linear(in_features=64, out_features=64, bias=False)
+                        (to_out): Linear(in_features=64, out_features=64, bias=True)
+                      )
+                    )
+                  )
+                  (mlp_block): Residual(
+                    (fn): PreNorm(
+                      (norm): LayerNorm((64,), eps=1e-05, elementwise_affine=True)
+                      (fn): FeedForward(
+                        (net): Sequential(
+                          (0): Linear(in_features=64, out_features=256, bias=True)
+                          (1): GELU(approximate='none')
+                          (2): Linear(in_features=256, out_features=64, bias=True)
+                        )
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+  (conv_layer_2): Conv2d(16, 16, kernel_size=(1, 1), stride=(1, 1))
+  (conv_layer_3): Conv2d(16, 32, kernel_size=(1, 1), stride=(1, 1))
+  (conv_pan): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+  (conv_ms): Conv2d(4, 16, kernel_size=(1, 1), stride=(1, 1))
+) 
+[2024-05-25 16:06:20,891]-[trainer.py line:224]:===> Loading Datasets 
+[2024-05-25 16:06:20,891]-[trainer.py line:229]:nums of train-set figures15 
+[2024-05-25 16:06:20,891]-[trainer.py line:230]:batch size is:1 
+[2024-05-25 16:06:20,892]-[trainer.py line:237]:===> start training 
+[2024-05-25 16:06:20,893]-[trainer.py line:241]:TransferNet is loading parameters 
+[2024-05-25 16:06:20,902]-[trainer.py line:254]:epoch:0 

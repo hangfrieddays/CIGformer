@@ -1,0 +1,552 @@
+[2024-05-25 15:57:00,785]-[trainer.py line:86]:using random init model! 
+[2024-05-25 15:57:00,870]-[trainer.py line:139]:===> Loading Datasets 
+[2024-05-25 15:57:00,871]-[trainer.py line:145]:nums of train-set figures15 
+[2024-05-25 15:57:00,871]-[trainer.py line:146]:batch size is:4 
+[2024-05-25 15:57:00,871]-[trainer.py line:149]:------------------Start Training !---------------- 
+[2024-05-25 15:57:00,871]-[trainer.py line:152]:epoch:0 
+[2024-05-25 15:57:03,744]-[trainer.py line:165]:Epoch : 0/20000   Batch : 0/4  Loss : 4.287867 
+[2024-05-25 15:57:03,780]-[trainer.py line:165]:Epoch : 0/20000   Batch : 1/4  Loss : 3.860210 
+[2024-05-25 15:57:03,816]-[trainer.py line:165]:Epoch : 0/20000   Batch : 2/4  Loss : 3.823881 
+[2024-05-25 15:57:03,863]-[trainer.py line:165]:Epoch : 0/20000   Batch : 3/4  Loss : 3.522928 
+[2024-05-25 15:57:03,869]-[trainer.py line:152]:epoch:1 
+[2024-05-25 15:57:03,905]-[trainer.py line:165]:Epoch : 1/20000   Batch : 0/4  Loss : 4.297592 
+[2024-05-25 15:57:03,941]-[trainer.py line:165]:Epoch : 1/20000   Batch : 1/4  Loss : 3.158294 
+[2024-05-25 15:57:03,975]-[trainer.py line:165]:Epoch : 1/20000   Batch : 2/4  Loss : 3.888094 
+[2024-05-25 15:57:04,001]-[trainer.py line:165]:Epoch : 1/20000   Batch : 3/4  Loss : 3.447742 
+[2024-05-25 15:57:04,002]-[trainer.py line:152]:epoch:2 
+[2024-05-25 15:57:04,034]-[trainer.py line:165]:Epoch : 2/20000   Batch : 0/4  Loss : 3.818069 
+[2024-05-25 15:57:04,070]-[trainer.py line:165]:Epoch : 2/20000   Batch : 1/4  Loss : 3.088942 
+[2024-05-25 15:57:04,103]-[trainer.py line:165]:Epoch : 2/20000   Batch : 2/4  Loss : 3.585640 
+[2024-05-25 15:57:04,130]-[trainer.py line:165]:Epoch : 2/20000   Batch : 3/4  Loss : 3.828195 
+[2024-05-25 15:57:04,130]-[trainer.py line:152]:epoch:3 
+[2024-05-25 15:57:04,166]-[trainer.py line:165]:Epoch : 3/20000   Batch : 0/4  Loss : 3.161236 
+[2024-05-25 15:57:04,199]-[trainer.py line:165]:Epoch : 3/20000   Batch : 1/4  Loss : 2.962907 
+[2024-05-25 15:57:04,235]-[trainer.py line:165]:Epoch : 3/20000   Batch : 2/4  Loss : 3.980935 
+[2024-05-25 15:57:04,259]-[trainer.py line:165]:Epoch : 3/20000   Batch : 3/4  Loss : 3.485121 
+[2024-05-25 15:57:04,260]-[trainer.py line:152]:epoch:4 
+[2024-05-25 15:57:04,294]-[trainer.py line:165]:Epoch : 4/20000   Batch : 0/4  Loss : 3.435403 
+[2024-05-25 15:57:04,327]-[trainer.py line:165]:Epoch : 4/20000   Batch : 1/4  Loss : 2.668791 
+[2024-05-25 15:57:04,362]-[trainer.py line:165]:Epoch : 4/20000   Batch : 2/4  Loss : 3.375956 
+[2024-05-25 15:57:04,388]-[trainer.py line:165]:Epoch : 4/20000   Batch : 3/4  Loss : 3.584845 
+[2024-05-25 15:57:04,388]-[trainer.py line:152]:epoch:5 
+[2024-05-25 15:57:04,424]-[trainer.py line:165]:Epoch : 5/20000   Batch : 0/4  Loss : 3.031414 
+[2024-05-25 15:57:04,458]-[trainer.py line:165]:Epoch : 5/20000   Batch : 1/4  Loss : 3.533541 
+[2024-05-25 15:57:04,493]-[trainer.py line:165]:Epoch : 5/20000   Batch : 2/4  Loss : 3.042045 
+[2024-05-25 15:57:04,521]-[trainer.py line:165]:Epoch : 5/20000   Batch : 3/4  Loss : 2.594688 
+[2024-05-25 15:57:04,521]-[trainer.py line:152]:epoch:6 
+[2024-05-25 15:57:04,555]-[trainer.py line:165]:Epoch : 6/20000   Batch : 0/4  Loss : 2.965682 
+[2024-05-25 15:57:04,589]-[trainer.py line:165]:Epoch : 6/20000   Batch : 1/4  Loss : 2.731279 
+[2024-05-25 15:57:04,623]-[trainer.py line:165]:Epoch : 6/20000   Batch : 2/4  Loss : 2.749526 
+[2024-05-25 15:57:04,647]-[trainer.py line:165]:Epoch : 6/20000   Batch : 3/4  Loss : 3.283117 
+[2024-05-25 15:57:04,648]-[trainer.py line:152]:epoch:7 
+[2024-05-25 15:57:04,684]-[trainer.py line:165]:Epoch : 7/20000   Batch : 0/4  Loss : 2.852129 
+[2024-05-25 15:57:04,719]-[trainer.py line:165]:Epoch : 7/20000   Batch : 1/4  Loss : 2.771660 
+[2024-05-25 15:57:04,750]-[trainer.py line:165]:Epoch : 7/20000   Batch : 2/4  Loss : 2.505207 
+[2024-05-25 15:57:04,775]-[trainer.py line:165]:Epoch : 7/20000   Batch : 3/4  Loss : 2.777941 
+[2024-05-25 15:57:04,775]-[trainer.py line:152]:epoch:8 
+[2024-05-25 15:57:04,809]-[trainer.py line:165]:Epoch : 8/20000   Batch : 0/4  Loss : 2.641781 
+[2024-05-25 15:57:04,842]-[trainer.py line:165]:Epoch : 8/20000   Batch : 1/4  Loss : 2.228142 
+[2024-05-25 15:57:04,876]-[trainer.py line:165]:Epoch : 8/20000   Batch : 2/4  Loss : 2.563496 
+[2024-05-25 15:57:04,901]-[trainer.py line:165]:Epoch : 8/20000   Batch : 3/4  Loss : 2.674843 
+[2024-05-25 15:57:04,902]-[trainer.py line:152]:epoch:9 
+[2024-05-25 15:57:04,932]-[trainer.py line:165]:Epoch : 9/20000   Batch : 0/4  Loss : 2.805530 
+[2024-05-25 15:57:04,964]-[trainer.py line:165]:Epoch : 9/20000   Batch : 1/4  Loss : 2.110250 
+[2024-05-25 15:57:04,999]-[trainer.py line:165]:Epoch : 9/20000   Batch : 2/4  Loss : 2.477921 
+[2024-05-25 15:57:05,026]-[trainer.py line:165]:Epoch : 9/20000   Batch : 3/4  Loss : 1.578868 
+[2024-05-25 15:57:05,026]-[trainer.py line:152]:epoch:10 
+[2024-05-25 15:57:05,059]-[trainer.py line:165]:Epoch : 10/20000   Batch : 0/4  Loss : 2.386579 
+[2024-05-25 15:57:05,094]-[trainer.py line:165]:Epoch : 10/20000   Batch : 1/4  Loss : 1.998892 
+[2024-05-25 15:57:05,127]-[trainer.py line:165]:Epoch : 10/20000   Batch : 2/4  Loss : 2.029033 
+[2024-05-25 15:57:05,153]-[trainer.py line:165]:Epoch : 10/20000   Batch : 3/4  Loss : 1.611779 
+[2024-05-25 15:57:05,154]-[trainer.py line:152]:epoch:11 
+[2024-05-25 15:57:05,190]-[trainer.py line:165]:Epoch : 11/20000   Batch : 0/4  Loss : 1.634584 
+[2024-05-25 15:57:05,224]-[trainer.py line:165]:Epoch : 11/20000   Batch : 1/4  Loss : 1.670054 
+[2024-05-25 15:57:05,256]-[trainer.py line:165]:Epoch : 11/20000   Batch : 2/4  Loss : 1.649019 
+[2024-05-25 15:57:05,281]-[trainer.py line:165]:Epoch : 11/20000   Batch : 3/4  Loss : 2.109032 
+[2024-05-25 15:57:05,281]-[trainer.py line:152]:epoch:12 
+[2024-05-25 15:57:05,315]-[trainer.py line:165]:Epoch : 12/20000   Batch : 0/4  Loss : 1.747232 
+[2024-05-25 15:57:05,348]-[trainer.py line:165]:Epoch : 12/20000   Batch : 1/4  Loss : 1.502343 
+[2024-05-25 15:57:05,399]-[trainer.py line:165]:Epoch : 12/20000   Batch : 2/4  Loss : 1.420527 
+[2024-05-25 15:57:05,425]-[trainer.py line:165]:Epoch : 12/20000   Batch : 3/4  Loss : 1.103268 
+[2024-05-25 15:57:05,425]-[trainer.py line:152]:epoch:13 
+[2024-05-25 15:57:05,458]-[trainer.py line:165]:Epoch : 13/20000   Batch : 0/4  Loss : 1.103389 
+[2024-05-25 15:57:05,490]-[trainer.py line:165]:Epoch : 13/20000   Batch : 1/4  Loss : 1.262248 
+[2024-05-25 15:57:05,522]-[trainer.py line:165]:Epoch : 13/20000   Batch : 2/4  Loss : 1.368680 
+[2024-05-25 15:57:05,548]-[trainer.py line:165]:Epoch : 13/20000   Batch : 3/4  Loss : 0.902578 
+[2024-05-25 15:57:05,550]-[trainer.py line:152]:epoch:14 
+[2024-05-25 15:57:05,580]-[trainer.py line:165]:Epoch : 14/20000   Batch : 0/4  Loss : 0.856259 
+[2024-05-25 15:57:05,612]-[trainer.py line:165]:Epoch : 14/20000   Batch : 1/4  Loss : 1.134590 
+[2024-05-25 15:57:05,645]-[trainer.py line:165]:Epoch : 14/20000   Batch : 2/4  Loss : 0.873978 
+[2024-05-25 15:57:05,671]-[trainer.py line:165]:Epoch : 14/20000   Batch : 3/4  Loss : 0.762859 
+[2024-05-25 15:57:05,671]-[trainer.py line:152]:epoch:15 
+[2024-05-25 15:57:05,708]-[trainer.py line:165]:Epoch : 15/20000   Batch : 0/4  Loss : 0.887502 
+[2024-05-25 15:57:05,742]-[trainer.py line:165]:Epoch : 15/20000   Batch : 1/4  Loss : 0.531687 
+[2024-05-25 15:57:05,776]-[trainer.py line:165]:Epoch : 15/20000   Batch : 2/4  Loss : 0.694684 
+[2024-05-25 15:57:05,805]-[trainer.py line:165]:Epoch : 15/20000   Batch : 3/4  Loss : 0.675158 
+[2024-05-25 15:57:05,805]-[trainer.py line:152]:epoch:16 
+[2024-05-25 15:57:05,838]-[trainer.py line:165]:Epoch : 16/20000   Batch : 0/4  Loss : 0.510817 
+[2024-05-25 15:57:05,870]-[trainer.py line:165]:Epoch : 16/20000   Batch : 1/4  Loss : 0.468275 
+[2024-05-25 15:57:05,903]-[trainer.py line:165]:Epoch : 16/20000   Batch : 2/4  Loss : 0.731447 
+[2024-05-25 15:57:05,929]-[trainer.py line:165]:Epoch : 16/20000   Batch : 3/4  Loss : 0.421264 
+[2024-05-25 15:57:05,930]-[trainer.py line:152]:epoch:17 
+[2024-05-25 15:57:05,963]-[trainer.py line:165]:Epoch : 17/20000   Batch : 0/4  Loss : 0.442756 
+[2024-05-25 15:57:05,997]-[trainer.py line:165]:Epoch : 17/20000   Batch : 1/4  Loss : 0.424072 
+[2024-05-25 15:57:06,029]-[trainer.py line:165]:Epoch : 17/20000   Batch : 2/4  Loss : 0.557945 
+[2024-05-25 15:57:06,054]-[trainer.py line:165]:Epoch : 17/20000   Batch : 3/4  Loss : 0.430644 
+[2024-05-25 15:57:06,054]-[trainer.py line:152]:epoch:18 
+[2024-05-25 15:57:06,087]-[trainer.py line:165]:Epoch : 18/20000   Batch : 0/4  Loss : 0.443419 
+[2024-05-25 15:57:06,120]-[trainer.py line:165]:Epoch : 18/20000   Batch : 1/4  Loss : 0.518074 
+[2024-05-25 15:57:06,154]-[trainer.py line:165]:Epoch : 18/20000   Batch : 2/4  Loss : 0.460712 
+[2024-05-25 15:57:06,180]-[trainer.py line:165]:Epoch : 18/20000   Batch : 3/4  Loss : 0.330384 
+[2024-05-25 15:57:06,180]-[trainer.py line:152]:epoch:19 
+[2024-05-25 15:57:06,218]-[trainer.py line:165]:Epoch : 19/20000   Batch : 0/4  Loss : 0.463563 
+[2024-05-25 15:57:06,251]-[trainer.py line:165]:Epoch : 19/20000   Batch : 1/4  Loss : 0.511459 
+[2024-05-25 15:57:06,283]-[trainer.py line:165]:Epoch : 19/20000   Batch : 2/4  Loss : 0.377927 
+[2024-05-25 15:57:06,308]-[trainer.py line:165]:Epoch : 19/20000   Batch : 3/4  Loss : 0.349984 
+[2024-05-25 15:57:06,309]-[trainer.py line:152]:epoch:20 
+[2024-05-25 15:57:06,340]-[trainer.py line:165]:Epoch : 20/20000   Batch : 0/4  Loss : 0.504181 
+[2024-05-25 15:57:06,373]-[trainer.py line:165]:Epoch : 20/20000   Batch : 1/4  Loss : 0.408647 
+[2024-05-25 15:57:06,406]-[trainer.py line:165]:Epoch : 20/20000   Batch : 2/4  Loss : 0.478024 
+[2024-05-25 15:57:06,431]-[trainer.py line:165]:Epoch : 20/20000   Batch : 3/4  Loss : 0.327059 
+[2024-05-25 15:57:06,431]-[trainer.py line:152]:epoch:21 
+[2024-05-25 15:57:06,466]-[trainer.py line:165]:Epoch : 21/20000   Batch : 0/4  Loss : 0.461367 
+[2024-05-25 15:57:06,499]-[trainer.py line:165]:Epoch : 21/20000   Batch : 1/4  Loss : 0.513881 
+[2024-05-25 15:57:06,534]-[trainer.py line:165]:Epoch : 21/20000   Batch : 2/4  Loss : 0.412668 
+[2024-05-25 15:57:06,559]-[trainer.py line:165]:Epoch : 21/20000   Batch : 3/4  Loss : 0.364356 
+[2024-05-25 15:57:06,559]-[trainer.py line:152]:epoch:22 
+[2024-05-25 15:57:06,593]-[trainer.py line:165]:Epoch : 22/20000   Batch : 0/4  Loss : 0.378342 
+[2024-05-25 15:57:06,628]-[trainer.py line:165]:Epoch : 22/20000   Batch : 1/4  Loss : 0.465884 
+[2024-05-25 15:57:06,662]-[trainer.py line:165]:Epoch : 22/20000   Batch : 2/4  Loss : 0.470622 
+[2024-05-25 15:57:06,689]-[trainer.py line:165]:Epoch : 22/20000   Batch : 3/4  Loss : 0.412636 
+[2024-05-25 15:57:06,689]-[trainer.py line:152]:epoch:23 
+[2024-05-25 15:57:06,727]-[trainer.py line:165]:Epoch : 23/20000   Batch : 0/4  Loss : 0.535591 
+[2024-05-25 15:57:06,759]-[trainer.py line:165]:Epoch : 23/20000   Batch : 1/4  Loss : 0.394964 
+[2024-05-25 15:57:06,793]-[trainer.py line:165]:Epoch : 23/20000   Batch : 2/4  Loss : 0.353353 
+[2024-05-25 15:57:06,819]-[trainer.py line:165]:Epoch : 23/20000   Batch : 3/4  Loss : 0.429146 
+[2024-05-25 15:57:06,820]-[trainer.py line:152]:epoch:24 
+[2024-05-25 15:57:06,852]-[trainer.py line:165]:Epoch : 24/20000   Batch : 0/4  Loss : 0.448334 
+[2024-05-25 15:57:06,887]-[trainer.py line:165]:Epoch : 24/20000   Batch : 1/4  Loss : 0.427000 
+[2024-05-25 15:57:06,922]-[trainer.py line:165]:Epoch : 24/20000   Batch : 2/4  Loss : 0.408904 
+[2024-05-25 15:57:06,948]-[trainer.py line:165]:Epoch : 24/20000   Batch : 3/4  Loss : 0.395327 
+[2024-05-25 15:57:06,948]-[trainer.py line:152]:epoch:25 
+[2024-05-25 15:57:06,982]-[trainer.py line:165]:Epoch : 25/20000   Batch : 0/4  Loss : 0.519670 
+[2024-05-25 15:57:07,017]-[trainer.py line:165]:Epoch : 25/20000   Batch : 1/4  Loss : 0.360421 
+[2024-05-25 15:57:07,051]-[trainer.py line:165]:Epoch : 25/20000   Batch : 2/4  Loss : 0.428744 
+[2024-05-25 15:57:07,075]-[trainer.py line:165]:Epoch : 25/20000   Batch : 3/4  Loss : 0.348608 
+[2024-05-25 15:57:07,075]-[trainer.py line:152]:epoch:26 
+[2024-05-25 15:57:07,109]-[trainer.py line:165]:Epoch : 26/20000   Batch : 0/4  Loss : 0.465840 
+[2024-05-25 15:57:07,142]-[trainer.py line:165]:Epoch : 26/20000   Batch : 1/4  Loss : 0.364156 
+[2024-05-25 15:57:07,174]-[trainer.py line:165]:Epoch : 26/20000   Batch : 2/4  Loss : 0.383726 
+[2024-05-25 15:57:07,201]-[trainer.py line:165]:Epoch : 26/20000   Batch : 3/4  Loss : 0.469349 
+[2024-05-25 15:57:07,202]-[trainer.py line:152]:epoch:27 
+[2024-05-25 15:57:07,240]-[trainer.py line:165]:Epoch : 27/20000   Batch : 0/4  Loss : 0.443586 
+[2024-05-25 15:57:07,274]-[trainer.py line:165]:Epoch : 27/20000   Batch : 1/4  Loss : 0.395123 
+[2024-05-25 15:57:07,306]-[trainer.py line:165]:Epoch : 27/20000   Batch : 2/4  Loss : 0.406573 
+[2024-05-25 15:57:07,333]-[trainer.py line:165]:Epoch : 27/20000   Batch : 3/4  Loss : 0.434088 
+[2024-05-25 15:57:07,333]-[trainer.py line:152]:epoch:28 
+[2024-05-25 15:57:07,369]-[trainer.py line:165]:Epoch : 28/20000   Batch : 0/4  Loss : 0.359697 
+[2024-05-25 15:57:07,402]-[trainer.py line:165]:Epoch : 28/20000   Batch : 1/4  Loss : 0.374826 
+[2024-05-25 15:57:07,435]-[trainer.py line:165]:Epoch : 28/20000   Batch : 2/4  Loss : 0.536909 
+[2024-05-25 15:57:07,460]-[trainer.py line:165]:Epoch : 28/20000   Batch : 3/4  Loss : 0.402634 
+[2024-05-25 15:57:07,461]-[trainer.py line:152]:epoch:29 
+[2024-05-25 15:57:07,497]-[trainer.py line:165]:Epoch : 29/20000   Batch : 0/4  Loss : 0.481223 
+[2024-05-25 15:57:07,532]-[trainer.py line:165]:Epoch : 29/20000   Batch : 1/4  Loss : 0.401124 
+[2024-05-25 15:57:07,565]-[trainer.py line:165]:Epoch : 29/20000   Batch : 2/4  Loss : 0.432920 
+[2024-05-25 15:57:07,591]-[trainer.py line:165]:Epoch : 29/20000   Batch : 3/4  Loss : 0.328134 
+[2024-05-25 15:57:07,592]-[trainer.py line:152]:epoch:30 
+[2024-05-25 15:57:07,623]-[trainer.py line:165]:Epoch : 30/20000   Batch : 0/4  Loss : 0.448215 
+[2024-05-25 15:57:07,656]-[trainer.py line:165]:Epoch : 30/20000   Batch : 1/4  Loss : 0.366775 
+[2024-05-25 15:57:07,688]-[trainer.py line:165]:Epoch : 30/20000   Batch : 2/4  Loss : 0.391089 
+[2024-05-25 15:57:07,715]-[trainer.py line:165]:Epoch : 30/20000   Batch : 3/4  Loss : 0.472663 
+[2024-05-25 15:57:07,715]-[trainer.py line:152]:epoch:31 
+[2024-05-25 15:57:07,750]-[trainer.py line:165]:Epoch : 31/20000   Batch : 0/4  Loss : 0.383490 
+[2024-05-25 15:57:07,782]-[trainer.py line:165]:Epoch : 31/20000   Batch : 1/4  Loss : 0.379511 
+[2024-05-25 15:57:07,816]-[trainer.py line:165]:Epoch : 31/20000   Batch : 2/4  Loss : 0.437371 
+[2024-05-25 15:57:07,842]-[trainer.py line:165]:Epoch : 31/20000   Batch : 3/4  Loss : 0.487926 
+[2024-05-25 15:57:07,843]-[trainer.py line:152]:epoch:32 
+[2024-05-25 15:57:07,877]-[trainer.py line:165]:Epoch : 32/20000   Batch : 0/4  Loss : 0.482596 
+[2024-05-25 15:57:07,911]-[trainer.py line:165]:Epoch : 32/20000   Batch : 1/4  Loss : 0.339196 
+[2024-05-25 15:57:07,945]-[trainer.py line:165]:Epoch : 32/20000   Batch : 2/4  Loss : 0.413147 
+[2024-05-25 15:57:07,969]-[trainer.py line:165]:Epoch : 32/20000   Batch : 3/4  Loss : 0.428546 
+[2024-05-25 15:57:07,970]-[trainer.py line:152]:epoch:33 
+[2024-05-25 15:57:08,002]-[trainer.py line:165]:Epoch : 33/20000   Batch : 0/4  Loss : 0.470939 
+[2024-05-25 15:57:08,036]-[trainer.py line:165]:Epoch : 33/20000   Batch : 1/4  Loss : 0.398933 
+[2024-05-25 15:57:08,068]-[trainer.py line:165]:Epoch : 33/20000   Batch : 2/4  Loss : 0.441379 
+[2024-05-25 15:57:08,095]-[trainer.py line:165]:Epoch : 33/20000   Batch : 3/4  Loss : 0.334156 
+[2024-05-25 15:57:08,095]-[trainer.py line:152]:epoch:34 
+[2024-05-25 15:57:08,129]-[trainer.py line:165]:Epoch : 34/20000   Batch : 0/4  Loss : 0.415021 
+[2024-05-25 15:57:08,161]-[trainer.py line:165]:Epoch : 34/20000   Batch : 1/4  Loss : 0.437639 
+[2024-05-25 15:57:08,194]-[trainer.py line:165]:Epoch : 34/20000   Batch : 2/4  Loss : 0.421663 
+[2024-05-25 15:57:08,220]-[trainer.py line:165]:Epoch : 34/20000   Batch : 3/4  Loss : 0.382192 
+[2024-05-25 15:57:08,221]-[trainer.py line:152]:epoch:35 
+[2024-05-25 15:57:08,252]-[trainer.py line:165]:Epoch : 35/20000   Batch : 0/4  Loss : 0.474488 
+[2024-05-25 15:57:08,287]-[trainer.py line:165]:Epoch : 35/20000   Batch : 1/4  Loss : 0.418980 
+[2024-05-25 15:57:08,320]-[trainer.py line:165]:Epoch : 35/20000   Batch : 2/4  Loss : 0.375910 
+[2024-05-25 15:57:08,345]-[trainer.py line:165]:Epoch : 35/20000   Batch : 3/4  Loss : 0.384272 
+[2024-05-25 15:57:08,345]-[trainer.py line:152]:epoch:36 
+[2024-05-25 15:57:08,380]-[trainer.py line:165]:Epoch : 36/20000   Batch : 0/4  Loss : 0.425599 
+[2024-05-25 15:57:08,412]-[trainer.py line:165]:Epoch : 36/20000   Batch : 1/4  Loss : 0.415216 
+[2024-05-25 15:57:08,451]-[trainer.py line:165]:Epoch : 36/20000   Batch : 2/4  Loss : 0.409424 
+[2024-05-25 15:57:08,477]-[trainer.py line:165]:Epoch : 36/20000   Batch : 3/4  Loss : 0.418392 
+[2024-05-25 15:57:08,478]-[trainer.py line:152]:epoch:37 
+[2024-05-25 15:57:08,512]-[trainer.py line:165]:Epoch : 37/20000   Batch : 0/4  Loss : 0.378298 
+[2024-05-25 15:57:08,543]-[trainer.py line:165]:Epoch : 37/20000   Batch : 1/4  Loss : 0.437464 
+[2024-05-25 15:57:08,578]-[trainer.py line:165]:Epoch : 37/20000   Batch : 2/4  Loss : 0.458539 
+[2024-05-25 15:57:08,605]-[trainer.py line:165]:Epoch : 37/20000   Batch : 3/4  Loss : 0.367557 
+[2024-05-25 15:57:08,605]-[trainer.py line:152]:epoch:38 
+[2024-05-25 15:57:08,638]-[trainer.py line:165]:Epoch : 38/20000   Batch : 0/4  Loss : 0.469907 
+[2024-05-25 15:57:08,672]-[trainer.py line:165]:Epoch : 38/20000   Batch : 1/4  Loss : 0.426178 
+[2024-05-25 15:57:08,705]-[trainer.py line:165]:Epoch : 38/20000   Batch : 2/4  Loss : 0.399262 
+[2024-05-25 15:57:08,732]-[trainer.py line:165]:Epoch : 38/20000   Batch : 3/4  Loss : 0.369003 
+[2024-05-25 15:57:08,732]-[trainer.py line:152]:epoch:39 
+[2024-05-25 15:57:08,766]-[trainer.py line:165]:Epoch : 39/20000   Batch : 0/4  Loss : 0.484871 
+[2024-05-25 15:57:08,800]-[trainer.py line:165]:Epoch : 39/20000   Batch : 1/4  Loss : 0.446999 
+[2024-05-25 15:57:08,834]-[trainer.py line:165]:Epoch : 39/20000   Batch : 2/4  Loss : 0.406406 
+[2024-05-25 15:57:08,859]-[trainer.py line:165]:Epoch : 39/20000   Batch : 3/4  Loss : 0.304045 
+[2024-05-25 15:57:08,859]-[trainer.py line:152]:epoch:40 
+[2024-05-25 15:57:08,890]-[trainer.py line:165]:Epoch : 40/20000   Batch : 0/4  Loss : 0.346250 
+[2024-05-25 15:57:08,923]-[trainer.py line:165]:Epoch : 40/20000   Batch : 1/4  Loss : 0.466279 
+[2024-05-25 15:57:08,955]-[trainer.py line:165]:Epoch : 40/20000   Batch : 2/4  Loss : 0.421409 
+[2024-05-25 15:57:08,981]-[trainer.py line:165]:Epoch : 40/20000   Batch : 3/4  Loss : 0.436803 
+[2024-05-25 15:57:08,981]-[trainer.py line:152]:epoch:41 
+[2024-05-25 15:57:09,015]-[trainer.py line:165]:Epoch : 41/20000   Batch : 0/4  Loss : 0.400805 
+[2024-05-25 15:57:09,047]-[trainer.py line:165]:Epoch : 41/20000   Batch : 1/4  Loss : 0.462939 
+[2024-05-25 15:57:09,082]-[trainer.py line:165]:Epoch : 41/20000   Batch : 2/4  Loss : 0.405556 
+[2024-05-25 15:57:09,107]-[trainer.py line:165]:Epoch : 41/20000   Batch : 3/4  Loss : 0.439458 
+[2024-05-25 15:57:09,107]-[trainer.py line:152]:epoch:42 
+[2024-05-25 15:57:09,138]-[trainer.py line:165]:Epoch : 42/20000   Batch : 0/4  Loss : 0.432014 
+[2024-05-25 15:57:09,170]-[trainer.py line:165]:Epoch : 42/20000   Batch : 1/4  Loss : 0.482482 
+[2024-05-25 15:57:09,205]-[trainer.py line:165]:Epoch : 42/20000   Batch : 2/4  Loss : 0.385621 
+[2024-05-25 15:57:09,231]-[trainer.py line:165]:Epoch : 42/20000   Batch : 3/4  Loss : 0.385095 
+[2024-05-25 15:57:09,231]-[trainer.py line:152]:epoch:43 
+[2024-05-25 15:57:09,265]-[trainer.py line:165]:Epoch : 43/20000   Batch : 0/4  Loss : 0.401439 
+[2024-05-25 15:57:09,301]-[trainer.py line:165]:Epoch : 43/20000   Batch : 1/4  Loss : 0.509199 
+[2024-05-25 15:57:09,333]-[trainer.py line:165]:Epoch : 43/20000   Batch : 2/4  Loss : 0.341166 
+[2024-05-25 15:57:09,359]-[trainer.py line:165]:Epoch : 43/20000   Batch : 3/4  Loss : 0.446401 
+[2024-05-25 15:57:09,359]-[trainer.py line:152]:epoch:44 
+[2024-05-25 15:57:09,393]-[trainer.py line:165]:Epoch : 44/20000   Batch : 0/4  Loss : 0.425001 
+[2024-05-25 15:57:09,428]-[trainer.py line:165]:Epoch : 44/20000   Batch : 1/4  Loss : 0.444254 
+[2024-05-25 15:57:09,462]-[trainer.py line:165]:Epoch : 44/20000   Batch : 2/4  Loss : 0.465157 
+[2024-05-25 15:57:09,488]-[trainer.py line:165]:Epoch : 44/20000   Batch : 3/4  Loss : 0.305382 
+[2024-05-25 15:57:09,488]-[trainer.py line:152]:epoch:45 
+[2024-05-25 15:57:09,520]-[trainer.py line:165]:Epoch : 45/20000   Batch : 0/4  Loss : 0.441399 
+[2024-05-25 15:57:09,552]-[trainer.py line:165]:Epoch : 45/20000   Batch : 1/4  Loss : 0.313516 
+[2024-05-25 15:57:09,584]-[trainer.py line:165]:Epoch : 45/20000   Batch : 2/4  Loss : 0.481603 
+[2024-05-25 15:57:09,610]-[trainer.py line:165]:Epoch : 45/20000   Batch : 3/4  Loss : 0.477354 
+[2024-05-25 15:57:09,610]-[trainer.py line:152]:epoch:46 
+[2024-05-25 15:57:09,643]-[trainer.py line:165]:Epoch : 46/20000   Batch : 0/4  Loss : 0.401253 
+[2024-05-25 15:57:09,674]-[trainer.py line:165]:Epoch : 46/20000   Batch : 1/4  Loss : 0.377158 
+[2024-05-25 15:57:09,708]-[trainer.py line:165]:Epoch : 46/20000   Batch : 2/4  Loss : 0.520479 
+[2024-05-25 15:57:09,732]-[trainer.py line:165]:Epoch : 46/20000   Batch : 3/4  Loss : 0.373829 
+[2024-05-25 15:57:09,733]-[trainer.py line:152]:epoch:47 
+[2024-05-25 15:57:09,764]-[trainer.py line:165]:Epoch : 47/20000   Batch : 0/4  Loss : 0.369866 
+[2024-05-25 15:57:09,802]-[trainer.py line:165]:Epoch : 47/20000   Batch : 1/4  Loss : 0.451723 
+[2024-05-25 15:57:09,836]-[trainer.py line:165]:Epoch : 47/20000   Batch : 2/4  Loss : 0.395201 
+[2024-05-25 15:57:09,862]-[trainer.py line:165]:Epoch : 47/20000   Batch : 3/4  Loss : 0.455667 
+[2024-05-25 15:57:09,863]-[trainer.py line:152]:epoch:48 
+[2024-05-25 15:57:09,895]-[trainer.py line:165]:Epoch : 48/20000   Batch : 0/4  Loss : 0.456214 
+[2024-05-25 15:57:09,928]-[trainer.py line:165]:Epoch : 48/20000   Batch : 1/4  Loss : 0.475501 
+[2024-05-25 15:57:09,961]-[trainer.py line:165]:Epoch : 48/20000   Batch : 2/4  Loss : 0.343854 
+[2024-05-25 15:57:09,986]-[trainer.py line:165]:Epoch : 48/20000   Batch : 3/4  Loss : 0.414890 
+[2024-05-25 15:57:09,986]-[trainer.py line:152]:epoch:49 
+[2024-05-25 15:57:10,020]-[trainer.py line:165]:Epoch : 49/20000   Batch : 0/4  Loss : 0.390606 
+[2024-05-25 15:57:10,054]-[trainer.py line:165]:Epoch : 49/20000   Batch : 1/4  Loss : 0.411000 
+[2024-05-25 15:57:10,086]-[trainer.py line:165]:Epoch : 49/20000   Batch : 2/4  Loss : 0.375690 
+[2024-05-25 15:57:10,115]-[trainer.py line:165]:Epoch : 49/20000   Batch : 3/4  Loss : 0.515933 
+[2024-05-25 15:57:10,115]-[trainer.py line:152]:epoch:50 
+[2024-05-25 15:57:10,151]-[trainer.py line:165]:Epoch : 50/20000   Batch : 0/4  Loss : 0.402153 
+[2024-05-25 15:57:10,185]-[trainer.py line:165]:Epoch : 50/20000   Batch : 1/4  Loss : 0.417062 
+[2024-05-25 15:57:10,219]-[trainer.py line:165]:Epoch : 50/20000   Batch : 2/4  Loss : 0.420369 
+[2024-05-25 15:57:10,246]-[trainer.py line:165]:Epoch : 50/20000   Batch : 3/4  Loss : 0.422985 
+[2024-05-25 15:57:10,252]-[trainer.py line:152]:epoch:51 
+[2024-05-25 15:57:10,284]-[trainer.py line:165]:Epoch : 51/20000   Batch : 0/4  Loss : 0.313625 
+[2024-05-25 15:57:10,322]-[trainer.py line:165]:Epoch : 51/20000   Batch : 1/4  Loss : 0.424092 
+[2024-05-25 15:57:10,357]-[trainer.py line:165]:Epoch : 51/20000   Batch : 2/4  Loss : 0.471478 
+[2024-05-25 15:57:10,382]-[trainer.py line:165]:Epoch : 51/20000   Batch : 3/4  Loss : 0.472515 
+[2024-05-25 15:57:10,382]-[trainer.py line:152]:epoch:52 
+[2024-05-25 15:57:10,416]-[trainer.py line:165]:Epoch : 52/20000   Batch : 0/4  Loss : 0.448378 
+[2024-05-25 15:57:10,450]-[trainer.py line:165]:Epoch : 52/20000   Batch : 1/4  Loss : 0.454992 
+[2024-05-25 15:57:10,485]-[trainer.py line:165]:Epoch : 52/20000   Batch : 2/4  Loss : 0.310723 
+[2024-05-25 15:57:10,509]-[trainer.py line:165]:Epoch : 52/20000   Batch : 3/4  Loss : 0.488120 
+[2024-05-25 15:57:10,509]-[trainer.py line:152]:epoch:53 
+[2024-05-25 15:57:10,543]-[trainer.py line:165]:Epoch : 53/20000   Batch : 0/4  Loss : 0.487708 
+[2024-05-25 15:57:10,578]-[trainer.py line:165]:Epoch : 53/20000   Batch : 1/4  Loss : 0.373848 
+[2024-05-25 15:57:10,610]-[trainer.py line:165]:Epoch : 53/20000   Batch : 2/4  Loss : 0.410270 
+[2024-05-25 15:57:10,635]-[trainer.py line:165]:Epoch : 53/20000   Batch : 3/4  Loss : 0.387649 
+[2024-05-25 15:57:10,637]-[trainer.py line:152]:epoch:54 
+[2024-05-25 15:57:10,670]-[trainer.py line:165]:Epoch : 54/20000   Batch : 0/4  Loss : 0.399458 
+[2024-05-25 15:57:10,702]-[trainer.py line:165]:Epoch : 54/20000   Batch : 1/4  Loss : 0.439121 
+[2024-05-25 15:57:10,734]-[trainer.py line:165]:Epoch : 54/20000   Batch : 2/4  Loss : 0.424641 
+[2024-05-25 15:57:10,758]-[trainer.py line:165]:Epoch : 54/20000   Batch : 3/4  Loss : 0.387174 
+[2024-05-25 15:57:10,760]-[trainer.py line:152]:epoch:55 
+[2024-05-25 15:57:10,792]-[trainer.py line:165]:Epoch : 55/20000   Batch : 0/4  Loss : 0.393679 
+[2024-05-25 15:57:10,826]-[trainer.py line:165]:Epoch : 55/20000   Batch : 1/4  Loss : 0.450754 
+[2024-05-25 15:57:10,858]-[trainer.py line:165]:Epoch : 55/20000   Batch : 2/4  Loss : 0.371339 
+[2024-05-25 15:57:10,885]-[trainer.py line:165]:Epoch : 55/20000   Batch : 3/4  Loss : 0.480470 
+[2024-05-25 15:57:10,885]-[trainer.py line:152]:epoch:56 
+[2024-05-25 15:57:10,919]-[trainer.py line:165]:Epoch : 56/20000   Batch : 0/4  Loss : 0.432492 
+[2024-05-25 15:57:10,950]-[trainer.py line:165]:Epoch : 56/20000   Batch : 1/4  Loss : 0.340538 
+[2024-05-25 15:57:10,985]-[trainer.py line:165]:Epoch : 56/20000   Batch : 2/4  Loss : 0.427951 
+[2024-05-25 15:57:11,012]-[trainer.py line:165]:Epoch : 56/20000   Batch : 3/4  Loss : 0.483632 
+[2024-05-25 15:57:11,013]-[trainer.py line:152]:epoch:57 
+[2024-05-25 15:57:11,048]-[trainer.py line:165]:Epoch : 57/20000   Batch : 0/4  Loss : 0.483246 
+[2024-05-25 15:57:11,103]-[trainer.py line:165]:Epoch : 57/20000   Batch : 1/4  Loss : 0.457950 
+[2024-05-25 15:57:11,140]-[trainer.py line:165]:Epoch : 57/20000   Batch : 2/4  Loss : 0.345570 
+[2024-05-25 15:57:11,167]-[trainer.py line:165]:Epoch : 57/20000   Batch : 3/4  Loss : 0.368626 
+[2024-05-25 15:57:11,168]-[trainer.py line:152]:epoch:58 
+[2024-05-25 15:57:11,204]-[trainer.py line:165]:Epoch : 58/20000   Batch : 0/4  Loss : 0.441081 
+[2024-05-25 15:57:11,240]-[trainer.py line:165]:Epoch : 58/20000   Batch : 1/4  Loss : 0.333630 
+[2024-05-25 15:57:11,272]-[trainer.py line:165]:Epoch : 58/20000   Batch : 2/4  Loss : 0.513105 
+[2024-05-25 15:57:11,297]-[trainer.py line:165]:Epoch : 58/20000   Batch : 3/4  Loss : 0.361494 
+[2024-05-25 15:57:11,299]-[trainer.py line:152]:epoch:59 
+[2024-05-25 15:57:11,334]-[trainer.py line:165]:Epoch : 59/20000   Batch : 0/4  Loss : 0.442038 
+[2024-05-25 15:57:11,366]-[trainer.py line:165]:Epoch : 59/20000   Batch : 1/4  Loss : 0.386617 
+[2024-05-25 15:57:11,400]-[trainer.py line:165]:Epoch : 59/20000   Batch : 2/4  Loss : 0.393994 
+[2024-05-25 15:57:11,424]-[trainer.py line:165]:Epoch : 59/20000   Batch : 3/4  Loss : 0.470001 
+[2024-05-25 15:57:11,425]-[trainer.py line:152]:epoch:60 
+[2024-05-25 15:57:11,455]-[trainer.py line:165]:Epoch : 60/20000   Batch : 0/4  Loss : 0.508360 
+[2024-05-25 15:57:11,488]-[trainer.py line:165]:Epoch : 60/20000   Batch : 1/4  Loss : 0.368182 
+[2024-05-25 15:57:11,521]-[trainer.py line:165]:Epoch : 60/20000   Batch : 2/4  Loss : 0.437898 
+[2024-05-25 15:57:11,546]-[trainer.py line:165]:Epoch : 60/20000   Batch : 3/4  Loss : 0.349244 
+[2024-05-25 15:57:11,546]-[trainer.py line:152]:epoch:61 
+[2024-05-25 15:57:11,581]-[trainer.py line:165]:Epoch : 61/20000   Batch : 0/4  Loss : 0.531478 
+[2024-05-25 15:57:11,613]-[trainer.py line:165]:Epoch : 61/20000   Batch : 1/4  Loss : 0.386522 
+[2024-05-25 15:57:11,647]-[trainer.py line:165]:Epoch : 61/20000   Batch : 2/4  Loss : 0.406129 
+[2024-05-25 15:57:11,671]-[trainer.py line:165]:Epoch : 61/20000   Batch : 3/4  Loss : 0.322688 
+[2024-05-25 15:57:11,671]-[trainer.py line:152]:epoch:62 
+[2024-05-25 15:57:11,705]-[trainer.py line:165]:Epoch : 62/20000   Batch : 0/4  Loss : 0.455541 
+[2024-05-25 15:57:11,737]-[trainer.py line:165]:Epoch : 62/20000   Batch : 1/4  Loss : 0.393380 
+[2024-05-25 15:57:11,769]-[trainer.py line:165]:Epoch : 62/20000   Batch : 2/4  Loss : 0.415671 
+[2024-05-25 15:57:11,796]-[trainer.py line:165]:Epoch : 62/20000   Batch : 3/4  Loss : 0.409592 
+[2024-05-25 15:57:11,797]-[trainer.py line:152]:epoch:63 
+[2024-05-25 15:57:11,828]-[trainer.py line:165]:Epoch : 63/20000   Batch : 0/4  Loss : 0.421216 
+[2024-05-25 15:57:11,863]-[trainer.py line:165]:Epoch : 63/20000   Batch : 1/4  Loss : 0.516124 
+[2024-05-25 15:57:11,897]-[trainer.py line:165]:Epoch : 63/20000   Batch : 2/4  Loss : 0.300804 
+[2024-05-25 15:57:11,922]-[trainer.py line:165]:Epoch : 63/20000   Batch : 3/4  Loss : 0.450135 
+[2024-05-25 15:57:11,923]-[trainer.py line:152]:epoch:64 
+[2024-05-25 15:57:11,955]-[trainer.py line:165]:Epoch : 64/20000   Batch : 0/4  Loss : 0.382279 
+[2024-05-25 15:57:11,990]-[trainer.py line:165]:Epoch : 64/20000   Batch : 1/4  Loss : 0.409984 
+[2024-05-25 15:57:12,021]-[trainer.py line:165]:Epoch : 64/20000   Batch : 2/4  Loss : 0.473905 
+[2024-05-25 15:57:12,047]-[trainer.py line:165]:Epoch : 64/20000   Batch : 3/4  Loss : 0.404758 
+[2024-05-25 15:57:12,048]-[trainer.py line:152]:epoch:65 
+[2024-05-25 15:57:12,079]-[trainer.py line:165]:Epoch : 65/20000   Batch : 0/4  Loss : 0.445067 
+[2024-05-25 15:57:12,112]-[trainer.py line:165]:Epoch : 65/20000   Batch : 1/4  Loss : 0.472454 
+[2024-05-25 15:57:12,146]-[trainer.py line:165]:Epoch : 65/20000   Batch : 2/4  Loss : 0.438724 
+[2024-05-25 15:57:12,173]-[trainer.py line:165]:Epoch : 65/20000   Batch : 3/4  Loss : 0.300961 
+[2024-05-25 15:57:12,173]-[trainer.py line:152]:epoch:66 
+[2024-05-25 15:57:12,207]-[trainer.py line:165]:Epoch : 66/20000   Batch : 0/4  Loss : 0.357221 
+[2024-05-25 15:57:12,238]-[trainer.py line:165]:Epoch : 66/20000   Batch : 1/4  Loss : 0.429325 
+[2024-05-25 15:57:12,270]-[trainer.py line:165]:Epoch : 66/20000   Batch : 2/4  Loss : 0.453473 
+[2024-05-25 15:57:12,295]-[trainer.py line:165]:Epoch : 66/20000   Batch : 3/4  Loss : 0.448642 
+[2024-05-25 15:57:12,296]-[trainer.py line:152]:epoch:67 
+[2024-05-25 15:57:12,328]-[trainer.py line:165]:Epoch : 67/20000   Batch : 0/4  Loss : 0.441875 
+[2024-05-25 15:57:12,360]-[trainer.py line:165]:Epoch : 67/20000   Batch : 1/4  Loss : 0.414370 
+[2024-05-25 15:57:12,391]-[trainer.py line:165]:Epoch : 67/20000   Batch : 2/4  Loss : 0.408079 
+[2024-05-25 15:57:12,415]-[trainer.py line:165]:Epoch : 67/20000   Batch : 3/4  Loss : 0.425258 
+[2024-05-25 15:57:12,415]-[trainer.py line:152]:epoch:68 
+[2024-05-25 15:57:12,449]-[trainer.py line:165]:Epoch : 68/20000   Batch : 0/4  Loss : 0.452684 
+[2024-05-25 15:57:12,481]-[trainer.py line:165]:Epoch : 68/20000   Batch : 1/4  Loss : 0.446060 
+[2024-05-25 15:57:12,516]-[trainer.py line:165]:Epoch : 68/20000   Batch : 2/4  Loss : 0.368657 
+[2024-05-25 15:57:12,542]-[trainer.py line:165]:Epoch : 68/20000   Batch : 3/4  Loss : 0.390269 
+[2024-05-25 15:57:12,543]-[trainer.py line:152]:epoch:69 
+[2024-05-25 15:57:12,576]-[trainer.py line:165]:Epoch : 69/20000   Batch : 0/4  Loss : 0.374892 
+[2024-05-25 15:57:12,610]-[trainer.py line:165]:Epoch : 69/20000   Batch : 1/4  Loss : 0.409833 
+[2024-05-25 15:57:12,643]-[trainer.py line:165]:Epoch : 69/20000   Batch : 2/4  Loss : 0.491380 
+[2024-05-25 15:57:12,668]-[trainer.py line:165]:Epoch : 69/20000   Batch : 3/4  Loss : 0.402451 
+[2024-05-25 15:57:12,668]-[trainer.py line:152]:epoch:70 
+[2024-05-25 15:57:12,701]-[trainer.py line:165]:Epoch : 70/20000   Batch : 0/4  Loss : 0.439495 
+[2024-05-25 15:57:12,733]-[trainer.py line:165]:Epoch : 70/20000   Batch : 1/4  Loss : 0.409263 
+[2024-05-25 15:57:12,770]-[trainer.py line:165]:Epoch : 70/20000   Batch : 2/4  Loss : 0.379938 
+[2024-05-25 15:57:12,795]-[trainer.py line:165]:Epoch : 70/20000   Batch : 3/4  Loss : 0.466590 
+[2024-05-25 15:57:12,795]-[trainer.py line:152]:epoch:71 
+[2024-05-25 15:57:12,829]-[trainer.py line:165]:Epoch : 71/20000   Batch : 0/4  Loss : 0.437651 
+[2024-05-25 15:57:12,864]-[trainer.py line:165]:Epoch : 71/20000   Batch : 1/4  Loss : 0.372108 
+[2024-05-25 15:57:12,899]-[trainer.py line:165]:Epoch : 71/20000   Batch : 2/4  Loss : 0.537266 
+[2024-05-25 15:57:12,927]-[trainer.py line:165]:Epoch : 71/20000   Batch : 3/4  Loss : 0.300860 
+[2024-05-25 15:57:12,928]-[trainer.py line:152]:epoch:72 
+[2024-05-25 15:57:12,961]-[trainer.py line:165]:Epoch : 72/20000   Batch : 0/4  Loss : 0.394804 
+[2024-05-25 15:57:12,994]-[trainer.py line:165]:Epoch : 72/20000   Batch : 1/4  Loss : 0.384939 
+[2024-05-25 15:57:13,028]-[trainer.py line:165]:Epoch : 72/20000   Batch : 2/4  Loss : 0.498775 
+[2024-05-25 15:57:13,054]-[trainer.py line:165]:Epoch : 72/20000   Batch : 3/4  Loss : 0.367653 
+[2024-05-25 15:57:13,055]-[trainer.py line:152]:epoch:73 
+[2024-05-25 15:57:13,089]-[trainer.py line:165]:Epoch : 73/20000   Batch : 0/4  Loss : 0.397727 
+[2024-05-25 15:57:13,124]-[trainer.py line:165]:Epoch : 73/20000   Batch : 1/4  Loss : 0.396679 
+[2024-05-25 15:57:13,155]-[trainer.py line:165]:Epoch : 73/20000   Batch : 2/4  Loss : 0.387116 
+[2024-05-25 15:57:13,183]-[trainer.py line:165]:Epoch : 73/20000   Batch : 3/4  Loss : 0.501711 
+[2024-05-25 15:57:13,184]-[trainer.py line:152]:epoch:74 
+[2024-05-25 15:57:13,216]-[trainer.py line:165]:Epoch : 74/20000   Batch : 0/4  Loss : 0.463926 
+[2024-05-25 15:57:13,248]-[trainer.py line:165]:Epoch : 74/20000   Batch : 1/4  Loss : 0.368551 
+[2024-05-25 15:57:13,279]-[trainer.py line:165]:Epoch : 74/20000   Batch : 2/4  Loss : 0.438536 
+[2024-05-25 15:57:13,307]-[trainer.py line:165]:Epoch : 74/20000   Batch : 3/4  Loss : 0.376956 
+[2024-05-25 15:57:13,307]-[trainer.py line:152]:epoch:75 
+[2024-05-25 15:57:13,339]-[trainer.py line:165]:Epoch : 75/20000   Batch : 0/4  Loss : 0.343436 
+[2024-05-25 15:57:13,373]-[trainer.py line:165]:Epoch : 75/20000   Batch : 1/4  Loss : 0.477062 
+[2024-05-25 15:57:13,408]-[trainer.py line:165]:Epoch : 75/20000   Batch : 2/4  Loss : 0.436205 
+[2024-05-25 15:57:13,434]-[trainer.py line:165]:Epoch : 75/20000   Batch : 3/4  Loss : 0.412988 
+[2024-05-25 15:57:13,434]-[trainer.py line:152]:epoch:76 
+[2024-05-25 15:57:13,467]-[trainer.py line:165]:Epoch : 76/20000   Batch : 0/4  Loss : 0.398542 
+[2024-05-25 15:57:13,501]-[trainer.py line:165]:Epoch : 76/20000   Batch : 1/4  Loss : 0.507789 
+[2024-05-25 15:57:13,534]-[trainer.py line:165]:Epoch : 76/20000   Batch : 2/4  Loss : 0.393008 
+[2024-05-25 15:57:13,559]-[trainer.py line:165]:Epoch : 76/20000   Batch : 3/4  Loss : 0.379750 
+[2024-05-25 15:57:13,559]-[trainer.py line:152]:epoch:77 
+[2024-05-25 15:57:13,591]-[trainer.py line:165]:Epoch : 77/20000   Batch : 0/4  Loss : 0.340330 
+[2024-05-25 15:57:13,625]-[trainer.py line:165]:Epoch : 77/20000   Batch : 1/4  Loss : 0.463328 
+[2024-05-25 15:57:13,658]-[trainer.py line:165]:Epoch : 77/20000   Batch : 2/4  Loss : 0.443219 
+[2024-05-25 15:57:13,686]-[trainer.py line:165]:Epoch : 77/20000   Batch : 3/4  Loss : 0.420336 
+[2024-05-25 15:57:13,686]-[trainer.py line:152]:epoch:78 
+[2024-05-25 15:57:13,720]-[trainer.py line:165]:Epoch : 78/20000   Batch : 0/4  Loss : 0.520303 
+[2024-05-25 15:57:13,753]-[trainer.py line:165]:Epoch : 78/20000   Batch : 1/4  Loss : 0.413764 
+[2024-05-25 15:57:13,786]-[trainer.py line:165]:Epoch : 78/20000   Batch : 2/4  Loss : 0.330679 
+[2024-05-25 15:57:13,811]-[trainer.py line:165]:Epoch : 78/20000   Batch : 3/4  Loss : 0.389315 
+[2024-05-25 15:57:13,811]-[trainer.py line:152]:epoch:79 
+[2024-05-25 15:57:13,845]-[trainer.py line:165]:Epoch : 79/20000   Batch : 0/4  Loss : 0.387097 
+[2024-05-25 15:57:13,877]-[trainer.py line:165]:Epoch : 79/20000   Batch : 1/4  Loss : 0.465939 
+[2024-05-25 15:57:13,914]-[trainer.py line:165]:Epoch : 79/20000   Batch : 2/4  Loss : 0.401365 
+[2024-05-25 15:57:13,938]-[trainer.py line:165]:Epoch : 79/20000   Batch : 3/4  Loss : 0.417161 
+[2024-05-25 15:57:13,939]-[trainer.py line:152]:epoch:80 
+[2024-05-25 15:57:13,971]-[trainer.py line:165]:Epoch : 80/20000   Batch : 0/4  Loss : 0.442398 
+[2024-05-25 15:57:14,005]-[trainer.py line:165]:Epoch : 80/20000   Batch : 1/4  Loss : 0.440472 
+[2024-05-25 15:57:14,039]-[trainer.py line:165]:Epoch : 80/20000   Batch : 2/4  Loss : 0.303869 
+[2024-05-25 15:57:14,064]-[trainer.py line:165]:Epoch : 80/20000   Batch : 3/4  Loss : 0.484718 
+[2024-05-25 15:57:14,064]-[trainer.py line:152]:epoch:81 
+[2024-05-25 15:57:14,098]-[trainer.py line:165]:Epoch : 81/20000   Batch : 0/4  Loss : 0.487953 
+[2024-05-25 15:57:14,135]-[trainer.py line:165]:Epoch : 81/20000   Batch : 1/4  Loss : 0.444458 
+[2024-05-25 15:57:14,170]-[trainer.py line:165]:Epoch : 81/20000   Batch : 2/4  Loss : 0.342655 
+[2024-05-25 15:57:14,195]-[trainer.py line:165]:Epoch : 81/20000   Batch : 3/4  Loss : 0.397291 
+[2024-05-25 15:57:14,195]-[trainer.py line:152]:epoch:82 
+[2024-05-25 15:57:14,230]-[trainer.py line:165]:Epoch : 82/20000   Batch : 0/4  Loss : 0.340204 
+[2024-05-25 15:57:14,265]-[trainer.py line:165]:Epoch : 82/20000   Batch : 1/4  Loss : 0.404074 
+[2024-05-25 15:57:14,297]-[trainer.py line:165]:Epoch : 82/20000   Batch : 2/4  Loss : 0.449101 
+[2024-05-25 15:57:14,322]-[trainer.py line:165]:Epoch : 82/20000   Batch : 3/4  Loss : 0.481310 
+[2024-05-25 15:57:14,324]-[trainer.py line:152]:epoch:83 
+[2024-05-25 15:57:14,357]-[trainer.py line:165]:Epoch : 83/20000   Batch : 0/4  Loss : 0.473090 
+[2024-05-25 15:57:14,390]-[trainer.py line:165]:Epoch : 83/20000   Batch : 1/4  Loss : 0.466020 
+[2024-05-25 15:57:14,425]-[trainer.py line:165]:Epoch : 83/20000   Batch : 2/4  Loss : 0.429014 
+[2024-05-25 15:57:14,452]-[trainer.py line:165]:Epoch : 83/20000   Batch : 3/4  Loss : 0.267787 
+[2024-05-25 15:57:14,453]-[trainer.py line:152]:epoch:84 
+[2024-05-25 15:57:14,486]-[trainer.py line:165]:Epoch : 84/20000   Batch : 0/4  Loss : 0.411041 
+[2024-05-25 15:57:14,518]-[trainer.py line:165]:Epoch : 84/20000   Batch : 1/4  Loss : 0.473633 
+[2024-05-25 15:57:14,550]-[trainer.py line:165]:Epoch : 84/20000   Batch : 2/4  Loss : 0.438001 
+[2024-05-25 15:57:14,576]-[trainer.py line:165]:Epoch : 84/20000   Batch : 3/4  Loss : 0.347611 
+[2024-05-25 15:57:14,577]-[trainer.py line:152]:epoch:85 
+[2024-05-25 15:57:14,610]-[trainer.py line:165]:Epoch : 85/20000   Batch : 0/4  Loss : 0.421220 
+[2024-05-25 15:57:14,645]-[trainer.py line:165]:Epoch : 85/20000   Batch : 1/4  Loss : 0.477527 
+[2024-05-25 15:57:14,679]-[trainer.py line:165]:Epoch : 85/20000   Batch : 2/4  Loss : 0.397937 
+[2024-05-25 15:57:14,705]-[trainer.py line:165]:Epoch : 85/20000   Batch : 3/4  Loss : 0.367761 
+[2024-05-25 15:57:14,705]-[trainer.py line:152]:epoch:86 
+[2024-05-25 15:57:14,741]-[trainer.py line:165]:Epoch : 86/20000   Batch : 0/4  Loss : 0.414279 
+[2024-05-25 15:57:14,777]-[trainer.py line:165]:Epoch : 86/20000   Batch : 1/4  Loss : 0.422220 
+[2024-05-25 15:57:14,811]-[trainer.py line:165]:Epoch : 86/20000   Batch : 2/4  Loss : 0.404271 
+[2024-05-25 15:57:14,835]-[trainer.py line:165]:Epoch : 86/20000   Batch : 3/4  Loss : 0.420034 
+[2024-05-25 15:57:14,835]-[trainer.py line:152]:epoch:87 
+[2024-05-25 15:57:14,867]-[trainer.py line:165]:Epoch : 87/20000   Batch : 0/4  Loss : 0.446464 
+[2024-05-25 15:57:14,899]-[trainer.py line:165]:Epoch : 87/20000   Batch : 1/4  Loss : 0.360908 
+[2024-05-25 15:57:14,937]-[trainer.py line:165]:Epoch : 87/20000   Batch : 2/4  Loss : 0.480145 
+[2024-05-25 15:57:14,964]-[trainer.py line:165]:Epoch : 87/20000   Batch : 3/4  Loss : 0.377810 
+[2024-05-25 15:57:14,964]-[trainer.py line:152]:epoch:88 
+[2024-05-25 15:57:14,998]-[trainer.py line:165]:Epoch : 88/20000   Batch : 0/4  Loss : 0.448889 
+[2024-05-25 15:57:15,030]-[trainer.py line:165]:Epoch : 88/20000   Batch : 1/4  Loss : 0.376262 
+[2024-05-25 15:57:15,062]-[trainer.py line:165]:Epoch : 88/20000   Batch : 2/4  Loss : 0.363943 
+[2024-05-25 15:57:15,090]-[trainer.py line:165]:Epoch : 88/20000   Batch : 3/4  Loss : 0.499443 
+[2024-05-25 15:57:15,090]-[trainer.py line:152]:epoch:89 
+[2024-05-25 15:57:15,122]-[trainer.py line:165]:Epoch : 89/20000   Batch : 0/4  Loss : 0.369194 
+[2024-05-25 15:57:15,157]-[trainer.py line:165]:Epoch : 89/20000   Batch : 1/4  Loss : 0.430219 
+[2024-05-25 15:57:15,190]-[trainer.py line:165]:Epoch : 89/20000   Batch : 2/4  Loss : 0.388422 
+[2024-05-25 15:57:15,216]-[trainer.py line:165]:Epoch : 89/20000   Batch : 3/4  Loss : 0.492133 
+[2024-05-25 15:57:15,217]-[trainer.py line:152]:epoch:90 
+[2024-05-25 15:57:15,251]-[trainer.py line:165]:Epoch : 90/20000   Batch : 0/4  Loss : 0.425051 
+[2024-05-25 15:57:15,285]-[trainer.py line:165]:Epoch : 90/20000   Batch : 1/4  Loss : 0.458564 
+[2024-05-25 15:57:15,317]-[trainer.py line:165]:Epoch : 90/20000   Batch : 2/4  Loss : 0.446144 
+[2024-05-25 15:57:15,340]-[trainer.py line:165]:Epoch : 90/20000   Batch : 3/4  Loss : 0.303981 
+[2024-05-25 15:57:15,340]-[trainer.py line:152]:epoch:91 
+[2024-05-25 15:57:15,375]-[trainer.py line:165]:Epoch : 91/20000   Batch : 0/4  Loss : 0.328930 
+[2024-05-25 15:57:15,407]-[trainer.py line:165]:Epoch : 91/20000   Batch : 1/4  Loss : 0.499864 
+[2024-05-25 15:57:15,442]-[trainer.py line:165]:Epoch : 91/20000   Batch : 2/4  Loss : 0.396947 
+[2024-05-25 15:57:15,468]-[trainer.py line:165]:Epoch : 91/20000   Batch : 3/4  Loss : 0.432205 
+[2024-05-25 15:57:15,470]-[trainer.py line:152]:epoch:92 
+[2024-05-25 15:57:15,503]-[trainer.py line:165]:Epoch : 92/20000   Batch : 0/4  Loss : 0.421071 
+[2024-05-25 15:57:15,536]-[trainer.py line:165]:Epoch : 92/20000   Batch : 1/4  Loss : 0.359028 
+[2024-05-25 15:57:15,571]-[trainer.py line:165]:Epoch : 92/20000   Batch : 2/4  Loss : 0.463892 
+[2024-05-25 15:57:15,597]-[trainer.py line:165]:Epoch : 92/20000   Batch : 3/4  Loss : 0.419939 
+[2024-05-25 15:57:15,599]-[trainer.py line:152]:epoch:93 
+[2024-05-25 15:57:15,630]-[trainer.py line:165]:Epoch : 93/20000   Batch : 0/4  Loss : 0.401381 
+[2024-05-25 15:57:15,663]-[trainer.py line:165]:Epoch : 93/20000   Batch : 1/4  Loss : 0.451767 
+[2024-05-25 15:57:15,698]-[trainer.py line:165]:Epoch : 93/20000   Batch : 2/4  Loss : 0.462168 
+[2024-05-25 15:57:15,721]-[trainer.py line:165]:Epoch : 93/20000   Batch : 3/4  Loss : 0.347182 
+[2024-05-25 15:57:15,722]-[trainer.py line:152]:epoch:94 
+[2024-05-25 15:57:15,755]-[trainer.py line:165]:Epoch : 94/20000   Batch : 0/4  Loss : 0.424823 
+[2024-05-25 15:57:15,790]-[trainer.py line:165]:Epoch : 94/20000   Batch : 1/4  Loss : 0.365359 
+[2024-05-25 15:57:15,825]-[trainer.py line:165]:Epoch : 94/20000   Batch : 2/4  Loss : 0.426134 
+[2024-05-25 15:57:15,850]-[trainer.py line:165]:Epoch : 94/20000   Batch : 3/4  Loss : 0.447406 
+[2024-05-25 15:57:15,850]-[trainer.py line:152]:epoch:95 
+[2024-05-25 15:57:15,884]-[trainer.py line:165]:Epoch : 95/20000   Batch : 0/4  Loss : 0.499261 
+[2024-05-25 15:57:15,917]-[trainer.py line:165]:Epoch : 95/20000   Batch : 1/4  Loss : 0.372932 
+[2024-05-25 15:57:15,949]-[trainer.py line:165]:Epoch : 95/20000   Batch : 2/4  Loss : 0.366924 
+[2024-05-25 15:57:15,976]-[trainer.py line:165]:Epoch : 95/20000   Batch : 3/4  Loss : 0.425109 
+[2024-05-25 15:57:15,976]-[trainer.py line:152]:epoch:96 
+[2024-05-25 15:57:16,009]-[trainer.py line:165]:Epoch : 96/20000   Batch : 0/4  Loss : 0.420902 
+[2024-05-25 15:57:16,041]-[trainer.py line:165]:Epoch : 96/20000   Batch : 1/4  Loss : 0.426608 
+[2024-05-25 15:57:16,076]-[trainer.py line:165]:Epoch : 96/20000   Batch : 2/4  Loss : 0.408705 
+[2024-05-25 15:57:16,102]-[trainer.py line:165]:Epoch : 96/20000   Batch : 3/4  Loss : 0.422957 
+[2024-05-25 15:57:16,102]-[trainer.py line:152]:epoch:97 
+[2024-05-25 15:57:16,137]-[trainer.py line:165]:Epoch : 97/20000   Batch : 0/4  Loss : 0.395114 
+[2024-05-25 15:57:16,171]-[trainer.py line:165]:Epoch : 97/20000   Batch : 1/4  Loss : 0.410415 
+[2024-05-25 15:57:16,205]-[trainer.py line:165]:Epoch : 97/20000   Batch : 2/4  Loss : 0.474853 
+[2024-05-25 15:57:16,230]-[trainer.py line:165]:Epoch : 97/20000   Batch : 3/4  Loss : 0.380812 
+[2024-05-25 15:57:16,230]-[trainer.py line:152]:epoch:98 
+[2024-05-25 15:57:16,263]-[trainer.py line:165]:Epoch : 98/20000   Batch : 0/4  Loss : 0.380649 
+[2024-05-25 15:57:16,297]-[trainer.py line:165]:Epoch : 98/20000   Batch : 1/4  Loss : 0.448953 
+[2024-05-25 15:57:16,328]-[trainer.py line:165]:Epoch : 98/20000   Batch : 2/4  Loss : 0.450078 
+[2024-05-25 15:57:16,352]-[trainer.py line:165]:Epoch : 98/20000   Batch : 3/4  Loss : 0.371913 
+[2024-05-25 15:57:16,352]-[trainer.py line:152]:epoch:99 
+[2024-05-25 15:57:16,385]-[trainer.py line:165]:Epoch : 99/20000   Batch : 0/4  Loss : 0.343714 
+[2024-05-25 15:57:16,420]-[trainer.py line:165]:Epoch : 99/20000   Batch : 1/4  Loss : 0.414591 
+[2024-05-25 15:57:16,453]-[trainer.py line:165]:Epoch : 99/20000   Batch : 2/4  Loss : 0.447672 
+[2024-05-25 15:57:16,482]-[trainer.py line:165]:Epoch : 99/20000   Batch : 3/4  Loss : 0.467193 
+[2024-05-25 15:57:16,482]-[trainer.py line:152]:epoch:100 
+[2024-05-25 15:57:16,514]-[trainer.py line:165]:Epoch : 100/20000   Batch : 0/4  Loss : 0.400492 
+[2024-05-25 15:57:16,548]-[trainer.py line:165]:Epoch : 100/20000   Batch : 1/4  Loss : 0.386871 
+[2024-05-25 15:57:16,582]-[trainer.py line:165]:Epoch : 100/20000   Batch : 2/4  Loss : 0.397204 
+[2024-05-25 15:57:16,607]-[trainer.py line:165]:Epoch : 100/20000   Batch : 3/4  Loss : 0.500792 
+[2024-05-25 15:57:16,613]-[trainer.py line:152]:epoch:101 
+[2024-05-25 15:57:16,646]-[trainer.py line:165]:Epoch : 101/20000   Batch : 0/4  Loss : 0.460076 
+[2024-05-25 15:57:16,689]-[trainer.py line:165]:Epoch : 101/20000   Batch : 1/4  Loss : 0.459169 
+[2024-05-25 15:57:16,724]-[trainer.py line:165]:Epoch : 101/20000   Batch : 2/4  Loss : 0.326841 
+[2024-05-25 15:57:16,752]-[trainer.py line:165]:Epoch : 101/20000   Batch : 3/4  Loss : 0.431541 
+[2024-05-25 15:57:16,753]-[trainer.py line:152]:epoch:102 
+[2024-05-25 15:57:16,789]-[trainer.py line:165]:Epoch : 102/20000   Batch : 0/4  Loss : 0.368838 
+[2024-05-25 15:57:16,824]-[trainer.py line:165]:Epoch : 102/20000   Batch : 1/4  Loss : 0.491318 
+[2024-05-25 15:57:16,863]-[trainer.py line:165]:Epoch : 102/20000   Batch : 2/4  Loss : 0.428423 
+[2024-05-25 15:57:16,889]-[trainer.py line:165]:Epoch : 102/20000   Batch : 3/4  Loss : 0.368382 
+[2024-05-25 15:57:16,889]-[trainer.py line:152]:epoch:103 
+[2024-05-25 15:57:16,927]-[trainer.py line:165]:Epoch : 103/20000   Batch : 0/4  Loss : 0.468463 
+[2024-05-25 15:57:16,962]-[trainer.py line:165]:Epoch : 103/20000   Batch : 1/4  Loss : 0.422165 
+[2024-05-25 15:57:17,002]-[trainer.py line:165]:Epoch : 103/20000   Batch : 2/4  Loss : 0.365621 
+[2024-05-25 15:57:17,030]-[trainer.py line:165]:Epoch : 103/20000   Batch : 3/4  Loss : 0.407616 
+[2024-05-25 15:57:17,030]-[trainer.py line:152]:epoch:104 
+[2024-05-25 15:57:17,065]-[trainer.py line:165]:Epoch : 104/20000   Batch : 0/4  Loss : 0.400058 
+[2024-05-25 15:57:17,135]-[trainer.py line:165]:Epoch : 104/20000   Batch : 1/4  Loss : 0.494950 
+[2024-05-25 15:57:17,172]-[trainer.py line:165]:Epoch : 104/20000   Batch : 2/4  Loss : 0.375423 
+[2024-05-25 15:57:17,204]-[trainer.py line:165]:Epoch : 104/20000   Batch : 3/4  Loss : 0.404334 
+[2024-05-25 15:57:17,205]-[trainer.py line:152]:epoch:105 
+[2024-05-25 15:57:17,246]-[trainer.py line:165]:Epoch : 105/20000   Batch : 0/4  Loss : 0.381429 
+[2024-05-25 15:57:17,285]-[trainer.py line:165]:Epoch : 105/20000   Batch : 1/4  Loss : 0.410692 
+[2024-05-25 15:57:17,327]-[trainer.py line:165]:Epoch : 105/20000   Batch : 2/4  Loss : 0.407899 
+[2024-05-25 15:57:17,357]-[trainer.py line:165]:Epoch : 105/20000   Batch : 3/4  Loss : 0.469907 
+[2024-05-25 15:57:17,358]-[trainer.py line:152]:epoch:106 
+[2024-05-25 15:57:17,402]-[trainer.py line:165]:Epoch : 106/20000   Batch : 0/4  Loss : 0.449538 
+[2024-05-25 15:57:17,444]-[trainer.py line:165]:Epoch : 106/20000   Batch : 1/4  Loss : 0.349239 
+[2024-05-25 15:57:17,485]-[trainer.py line:165]:Epoch : 106/20000   Batch : 2/4  Loss : 0.496863 
+[2024-05-25 15:57:17,516]-[trainer.py line:165]:Epoch : 106/20000   Batch : 3/4  Loss : 0.338481 
+[2024-05-25 15:57:17,517]-[trainer.py line:152]:epoch:107 
+[2024-05-25 15:57:17,557]-[trainer.py line:165]:Epoch : 107/20000   Batch : 0/4  Loss : 0.470154 
+[2024-05-25 15:57:17,600]-[trainer.py line:165]:Epoch : 107/20000   Batch : 1/4  Loss : 0.411327 
+[2024-05-25 15:57:17,641]-[trainer.py line:165]:Epoch : 107/20000   Batch : 2/4  Loss : 0.419726 
+[2024-05-25 15:57:17,673]-[trainer.py line:165]:Epoch : 107/20000   Batch : 3/4  Loss : 0.336178 
+[2024-05-25 15:57:17,674]-[trainer.py line:152]:epoch:108 
+[2024-05-25 15:57:17,718]-[trainer.py line:165]:Epoch : 108/20000   Batch : 0/4  Loss : 0.383887 
+[2024-05-25 15:57:17,760]-[trainer.py line:165]:Epoch : 108/20000   Batch : 1/4  Loss : 0.411224 
+[2024-05-25 15:57:17,802]-[trainer.py line:165]:Epoch : 108/20000   Batch : 2/4  Loss : 0.455647 
+[2024-05-25 15:57:17,830]-[trainer.py line:165]:Epoch : 108/20000   Batch : 3/4  Loss : 0.403317 
+[2024-05-25 15:57:17,831]-[trainer.py line:152]:epoch:109 
+[2024-05-25 15:57:17,871]-[trainer.py line:165]:Epoch : 109/20000   Batch : 0/4  Loss : 0.488542 

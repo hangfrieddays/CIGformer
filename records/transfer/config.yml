@@ -1,0 +1,59 @@
+summary_dir: "records/transfer/runs/"
+
+dataset:
+  name: GF-2
+  bit_depth: 10
+
+  train:
+    # dataset
+    dataset_pth:  ./data/psdata3/GF-2/train_low_res 
+    # dataloader
+    batch_size: 4
+    use_shuffle:  True
+    use_sewar:  False
+
+  test:
+    # dataset
+    dataset_pth:  ./data/psdata3/GF-2/test_low_res 
+    # dataloader
+    batch_size: 4
+    use_shuffle:  True
+    test_out: data/model_out/fusion_result
+    choose_save:  False
+
+train:
+  save_interval:  50
+  metric_interval:  20
+  # hyper-parameters
+  n_epochs: 20000
+  eps: 1e-3
+  stddev: 1e-3
+  down_sample_size: 128
+
+
+  # optim_g
+  optim:
+    type: Adam
+    lr: 1e-3
+    weight_decay: 0.0
+
+  # loss
+  loss:
+    type: MSE_LOSS
+    ratio: 100
+
+model:
+  in_channel: 4
+  name: TransferNetwork
+  pretrained_pth:  records/transfer/arch_model/transfer.pth
+  save_dir:  records/transfer/arch_model/
+  transfer_pth:  records/transfer/arch_model/transfer.pth
+
+
+# record
+logger:
+  print_freq: 200
+  save_checkpoint_freq: !!float 5e1  # 50 iter
+
+
+

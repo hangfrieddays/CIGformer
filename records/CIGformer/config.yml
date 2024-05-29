@@ -1,0 +1,96 @@
+summary_dir: "records/CIGformer/runs/"
+
+dataset:
+  name: GF-2
+  bit_depth:  10
+
+  train:
+    # dataset
+    dataset_pth:  ./data/psdata3/GF-2/train_low_res 
+    # dataloader
+    batch_size: 1
+    use_shuffle:  True
+    use_sewar:  False
+
+  test:
+    # dataset
+    dataset_pth:  ./data/psdata3/GF-2/test_low_res 
+    # dataloader
+    batch_size: 1
+    use_shuffle:  True
+    test_out: ./data/model_out/psdata3/GF-2/fusion_result
+    choose_save:  True
+
+train:
+  save_interval:  1
+  metric_interval:  10
+  # hyper-parameters
+  n_epochs: 10
+  eps: 1e-3
+  stddev: 1e-3
+  down_sample_size: 256
+
+  use_sewar: False
+
+  # optim_g
+  optim:
+    type: Adam
+    lr: 3e-4
+    weight_decay: 0
+
+  # loss
+  loss:
+    type: MSE_LOSS
+
+
+loss_ratio:
+  # set loss ratio
+  fusion:
+    loss_alpha: 0.9
+transfer:
+  in_channel: 4
+
+
+model:
+  name: CIGformer
+  pretrained_pth:  records/CIGformer/arch_model/CIGformer.pth
+  save_dir:  records/CIGformer/arch_model/
+  transfer_pth:  records/transfer/arch_model/transfer.pth
+  scale: False
+  norm_input: True # todo
+  number_PCG_layers:  3
+  pan_channel:  1
+  ms_channel:  4
+
+
+  modules_configs:
+    win_size: 4
+    base_dim: 16
+
+    n_feats_1: 16
+    n_heads_1: 4
+    head_dim_1: 4
+    downsample_factor_1: 1
+    guidance: True
+
+    n_feats_2: 16
+    n_heads_2: 4
+    head_dim_2: 8
+    downsample_factor_2: 2
+
+    n_feats_3: 32
+    n_heads_3: 4
+    head_dim_3: 16
+    downsample_factor_3: 2
+
+    last_channels: 32
+
+
+
+# record
+logger:
+  print_freq: 200
+  save_checkpoint_freq: !!float 5e1  # 50 iter
+
+
+
